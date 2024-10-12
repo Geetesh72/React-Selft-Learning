@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-
+import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 
@@ -15,7 +15,7 @@ const reactElement = React.createElement(
   'click me to visit google' // 3rd is expected is dierect text 
     // anotherElement  this is evaluted expression 
 )
-createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
   </StrictMode>,
